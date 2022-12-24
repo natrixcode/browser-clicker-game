@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@500&family=Poppins&display=swap');
+body {
+    background-color: #B2A4FF;
+    font-family: Poppins;
+    margin: 0px;
+}
+
+h1 {
+    color: #ffffff;
+    text-shadow:  #8274d6 5px 1px;
+    font-family: Baloo;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body .container {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+  }
+  
+  body .container .game-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s;
+  }
+  
+  body .container .game-info h1 {
+    font-size: 3rem;
+    display: flex;
+  }
+  
+  body .container .game-info h1 span {
+    font-size: 0.8rem;
+  }
+  
+  body .container .game-info .play-btn {
+    margin: 1rem 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #7a5c4c89;
+    background-color: #FFF9CA;
+    padding: 10px 70px;
+    transition: all 0.3s;
+    font-family: Baloo;
+    box-shadow:  #8374d689 3px 6px;
+  }
+  
+  body .container .game-info .play-btn:hover {
+    transform: scale(1.1);
+  }
+  
+  body .container .game-info .credit-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-self: flex-end;
+  }
+
+  body .container .touch-me-div {
+    display: none;
+    position: absolute;
+    padding: 2px;
+  }
+  
+  body .container .touch-me-div .touch-me-img {
+    width: 180px;
+    
+  }
+  .touch-me-img:active {
+    transform: translateY(4px) translateX(4px);
+  }
+
+  body .container .stop-game-div {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  
+  body .container .stop-game-div .stop-btn {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: #7a5c4c89;
+    background-color: #FFF9CA;
+    padding: 6px 30px;
+    transition: all 0.3s;
+    font-family: Baloo;
+  }
+  
+  body .container .stop-game-div .stop-btn:hover {
+    transform: scale(1.1);
+  }
+
+  .credit-h1 {
+    margin-top: 20px;
+    color: #665ba480;
+    font-family: Baloo;
+  }
+
+  .round{
+    
+    font-size: 12px;
+    color: #4D5259;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: .5em 2em;
+    background: #FFFFFF;
+    border: 2px solid #4D5259;
+    box-shadow: 4px 4px 0 0 #4D5259;
+    border-radius: 100px;
+    outline:0;
+    transition: ease all .1s;
+  } 
+  .round:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: 0px 0px 0 0 #4D5259;
+  }
+  .round:hover {
+    background: #d3d3d3;
+  }
+  
+  .settings {
+    font-size: 10px;
+    color: #4D5259;
+    line-height: 1.5;
+    font-weight: bold;
+    padding: .5em 2em;
+    background: #FFFFFF;
+    border: 2px solid #4D5259;
+    box-shadow: 4px 4px 0 0 #4D5259;
+    outline:0;
+  }
+  
+  .settings:active {
+    transform: translateY(4px) translateX(4px);
+    box-shadow: 0px 0px 0 0 #4D5259;
+  }
+  .settings:hover {
+    background: #d3d3d3;
+  }
+
+
+  .lbs {
+    font-size: 64px;
+  }
+
+  h5 {
+    margin-bottom: 20px;
+  }
+
+
+
+
+ul {
+    height: auto;
+    width: 300px;
+    list-style-type: none;
+}
+
+li {
+    border: 3px solid #4D5259;
+    border-bottom: 0px;
+    font-weight: bold;
+    padding: 16px;
+    font-family: Poppins;
+    color: #4D5259;
+    background-color: #ffff;
+}
+
+li:last-child {
+    border-bottom: 3px solid #4D5259;
+}
+
+.ctmenurnd {
+    line-height: 1.5;
+    font-weight: bold;
+    padding: .5em 2em;
+    background: #FFFFFF;
+    border: 2px solid #4D5259;
+    box-shadow: 2px 2px 0 0 #4D5259;
+    border-radius: 100px;
+    outline:0;
+    color: #4D5259;
+    font-family: Montserrat;
+    font-weight: 900;
+    text-align: center;
+    margin: 0px;
+    float: right;
+}
+
+.kittychoice {
+    margin: 0px;
+    margin-top: -12px;
+    float: left;
+    height: auto;
+    width: 64px;
+}
+
+.catmenu {
+  position:absolute;
+    top:10px;
+    left: 10px;
+}
+
+
+.cat-menu-icon {
+  width: 80px;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 20px;
+}

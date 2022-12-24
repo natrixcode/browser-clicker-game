@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Baloo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Bellota' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Garamond' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <title>Kitty Click</title>
+</head>
+
+
+
+<body onbeforeunload="return closingCode()">
+    <section class="container">
+        <div class="game-info" id="game-info">
+            <h1>Meooooooow-</h1>
+            <button class="play-btn" id="play-btn">play</button>
+            <div class="credit-info">
+                <p class="credit-h1">Project by Nata Hoshovska</p>
+            </div>
+        </div>
+
+        <div class="catmenu" id="cat-menu">
+            <img src="cat-menu.png" alt="" class="cat-menu-icon">
+            <!-- <ul>
+                <li>
+                    <img src="catmenu1.png" class="kittychoice">
+                    ginger cat
+                    <button class="ctmenurnd">1000</button>
+                </li>
+                <li>
+                    <img src="catmenu1.png" class="kittychoice">
+                    gray cat
+                    <button class="ctmenurnd">2000</button>
+                </li>
+                <li>
+                    <img src="catmenu1.png" class="kittychoice">
+                    black cat
+                    <button class="ctmenurnd">3000</button>
+                </li>
+            </ul> -->
+        </div>
+
+
+        <div class="touch-me-div" id="touch-me-div">
+        <h1 class="lbs" id='total'>0</h1>
+        <h5 id="click" style="font-family:courier;">LB/click: 1 | LB/sec: 0</h5>
+            <img class="touch-me-img" src="k.png" alt="" id="face" onclick='clicked()' onclick="setTimeout(myTimer, 0);" >
+            <br><br>
+
+      <button id='upgrade' class="round" onclick='upgrade("upgrade")' style="font-family:courier;">0-main upgrade: 15</button>
+      <br><br>
+      <button id='cat' class="round" onclick='upgrade("clicker cat")' style="font-family:courier;">0-kitty paw: 25 | +1/sec</button>
+      <br><br>
+      <button id='worker' class="round" onclick='upgrade("worker")' style="font-family:courier;">0-worker: 250 | +15/sec</button><br><br>
+      <button class="settings" onclick="save()">Save</button>
+      <button class="settings" onclick="load()">Load</button>
+      <button class="settings" onclick="reset()">Reset</button><br><br>
+
+
+
+   
+        </div>
+        <div class="stop-game-div" id="stop-game-div">
+            <button class="stop-btn" id="stop-btn">Stop</button>
+        </div>
+    </section>
+        <script src="app.js"></script>
+</body>
+</html>
